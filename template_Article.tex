@@ -3,7 +3,21 @@
 \usepackage{nopageno}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage[labelfont=bf]{caption}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsthm}
 \graphicspath{ {figures/} }
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem*{observation}{Observation}
+\newtheorem*{example}{Example}
+\newtheorem*{remark}{Remark}
 
 %opening
 \title{In-Depth Statistical Analysis of Ritwik Distribution}
@@ -31,7 +45,7 @@ Comprehensive, boots on the ground research was done to effectively determine th
 	\caption{Geographical density of Ritwiks, green being low and red being high.}
 	\label{fig:ritwikgeographicaldistro}
 \end{figure}
-We collected a large sample size ($N = 12$) and used Hamiltonian Monte Carlo methods to simulate certain parameters that are backed by Bayesian goodness, undeniably proving that our method is rock solid. All data was analyzed with cutting edge tools\cite{Zaharia:2012:RDD:2228298.2228301, PyMC3}. The following math not only looks cool, but makes reviewers think that we did real work because math makes it look that way.
+We collected a large sample size ($N = 12$) and used Hamiltonian Monte Carlo methods to simulate certain parameters that are backed by Bayesian goodness, undeniably proving that our method is rock solid. All data was analyzed with cutting edge tools \cite{Zaharia:2012:RDD:2228298.2228301, PyMC3}. The following math not only looks cool, but makes reviewers think that we did real work because math makes it look that way.
 \begin{subequations}
 \begin{align}
 Count_i \sim Poi(\lambda),\\
@@ -41,14 +55,31 @@ Count_i \sim Poi(\lambda),\\
 \end{subequations}
 \vspace{1in}
 
-\section{Popularity of Ritwik Over Time}
-Though Ritwiks themselves are insanely popular\footnote{Refer to our peers.}, the name Ritwik itself has not seen widespread gain in usage throughout history. Using historical databases, we were able to reconstruct the usage of the name and use popular methods such as randomly drawing a line that looks about right to estimate the future usage of the name as well.
+\section{Popularity of ``Ritwik" Over Time}
+Though Ritwiks themselves are insanely popular\footnote{Refer to our peers.}, the name Ritwik itself has not seen widespread gain in usage throughout history. Using historical databases, we were able to reconstruct the usage of the name and use popular methods such as randomly drawing a line that looks about right to estimate the future usage of the name as well (see \ref{fig:usageofritwik}).
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=4in]{figures/UsageOfRitwik}
 	\caption{The occurrence of the name Ritwik over time. Green line represents the year this paper was published.}
 	\label{fig:usageofritwik}
 \end{figure}
+As evident, the name Ritwik is predicted to skyrocket as this paper is made public. Eventually, all people will be named Ritwik, and the universe will be at peace.
+
+\section{On the Immortality of Ritwiks}
+Based on the vast quantity of Ritwiks we have met, none of them have been dead or deceased. As such, we are led to believe that all Ritwiks are immortal until the eventual heat death of the universe \cite{HeatDeath}.
+\begin{lemma}
+\label{lemma:death}
+	Given any Ritwik, the average lifespan of the individual will be $\infty$.
+\end{lemma}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=5in]{figures/RitwikLackOfDeath}
+	\caption{Search of the U.S. Social Security Death Index for ``Ritwik".}
+	\label{fig:ritwiklackofdeath}
+\end{figure}
+\begin{proof}
+Let us assume that all Ritwiks die, for the sake of contradiction. Therefore, a record of death must exist within the United States Social Security Death Index\footnote{http://search.ancestry.com/search/db.aspx?dbid=3693}. However, we can see in Figure \ref{fig:ritwiklackofdeath}, no records of deceased Ritwiks exist. Therefore, Lemma \ref{lemma:death} must hold.
+\end{proof}
 
 
 \bibliographystyle{unsrt}
