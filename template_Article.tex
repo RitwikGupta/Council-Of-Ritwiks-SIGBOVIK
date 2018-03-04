@@ -55,14 +55,47 @@ Count_i \sim Poi(\lambda),\\
 \end{subequations}
 \vspace{1in}
 
-\section{Relative Frequency of ``Ritwik"}
-Ritwik is a low frequency name. This has been shown to be true using time-tested methods of expected author intuition level. Li et. al. \cite{Baby}states that low frequency names are related to each other using Zipf's law which is stated as follows:
+\subsection{Estimating the Density of ``Ritwik" Using Novel Methods}
+Ritwik is a low frequency name, a statement which has been shown to be true using time-tested methods of Expected Author Intuition Level (EAIL). Li et. al. \cite{Baby} state that low frequency names are related to each other using Zipf's Law which is stated as follows:
 
-"ADD LIPF'S MATHEMATICAL EQN WITH FANCY ZERO CONSTANTS HERE"
+\vspace{2mm}
+Let $X = {x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8, x_9, x_{10}, x_{11}, ... , x_N}.,$, $N$ = some large number and $X$ is the vector of names present in the world. Let $Y = {y_1, y_2, y_3, ... y_N}$ be the ranking of each $x_i$. Therefore, Zipf's Law states that:
 
-But we have to show that this paper is original and novel. Therefore we use deep learning even to learn a simple distribution which gives us a significant improvement(of 0.1$\%$'). This boost was definitely not due to a better initialization but due to our carefully thought out and fancy architecture. To make our results reproducible we have stuck to top-notch academic practices of releasing all of our code on private github repositories. 
-"LETS ADD A FAKE FIGURE TOO ? " 
+\begin{equation}
+Y \propto \frac{1}{Count(X)}
+\end{equation}
 
+We completely ignore this rule and use deep learning since representation learning solves all problems. Assume a low density uniform prior on the density of Ritwik over geographical locations (which are sorted alphabetically and mapped to whole numbers). When you imagine it in your head, it sure does look like a line, right? Therefore, we use linear activations in our neural network model, leading to a massive gain in performance to competing Ritwik density estimators (see Table \ref{table:affineadversarial} below).
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	\textbf{Method} & \textbf{MAP} & \textbf{MRP} & \textbf{GDP} \\
+	\hline
+	SVM & 0.05 & 0.02 & 9.65 \\
+	\hline
+	SVM + BBN & 0.45 & 0.21 & 3.21 \\
+	\hline
+	RBM & 0.68 & 0.44 & 2.96 \\
+	\hline
+	Linear NN (ours) & \textbf{1.00} & \textbf{0.99} & \textbf{0.01}\\
+	\hline
+\end{tabular}
+\caption{Performance of Ritwik density methods.}
+\label{table:densitycomp}
+\end{table}
+
+An example of an architecture we did \textbf{not} use is included below as reference, carefully created in MS Paint for the highest quality rendering and production value.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4in]{figures/Neuralnet}
+	\caption{An architecture that seems like it would give results, that we summarily ignored.}
+	\label{fig:neuralnet}
+\end{figure}
+
+To make our results reproducible, we have stuck to well-backed academic practices of releasing all of our code on private GitHub repositories only accessible via an email to one of our auxiliary email addresses that we check once in a blue moon, or after we publish everything of use from the dataset.
 
 \section{Popularity of ``Ritwik" Over Time}
 Though Ritwiks themselves are insanely popular\footnote{Refer to our peers.}, the name Ritwik itself has not seen widespread gain in usage throughout history. Using historical databases, we were able to reconstruct the usage of the name and use popular methods such as randomly drawing a line that looks about right to estimate the future usage of the name as well (see \ref{fig:usageofritwik}).
